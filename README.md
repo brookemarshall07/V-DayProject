@@ -1,2 +1,2 @@
 # V-DayProject
-Valentine's Day Box, made with react
+Valentine's Day Messenger Application, made with react & redux
