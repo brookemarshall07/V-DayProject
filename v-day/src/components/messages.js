@@ -1,18 +1,18 @@
 import React from 'react';
 
 
-const Messages = ({message}) => {
+const Messages = ({messages, deleteMessage}) => {
 
-    const messageList = message.length ? (
-        message.map(message => {
+    const messageList = messages.length ? (
+        messages.map(message => {
             return (
                 <div className="your-item" key={message.id}>
-                    <span>{message.content}</span>
+                    <span onClick={() => {deleteMessage(message.id)}}>{message.content}</span>
                 </div>
             )
         })
     ) : (
-        <p className="center"> 'No Valentine Messages...yet'</p>
+        <p className="center"> No Valentine Grams...yet</p>
     )
     return (
         <div className="your messages">
